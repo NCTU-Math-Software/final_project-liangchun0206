@@ -1,4 +1,4 @@
-function M=mat_gen(n)
+function sum=mat_gen(n)
 tic
     M=zeros(n,n);
     
@@ -33,13 +33,12 @@ tic
         [row,col] = find(M==val);
         
     end
+    format long 
     sum=0;
     for ii =1 :n
-        sum=sum+M(ii,ii);
+        sum=sum+M(ii,ii)+M(n-ii+1,ii);
     end
-    for ii =1 :n
-        sum=sum+M(n-ii+1,ii);
-    end
+    
     sum=sum-1;
     disp(sum);
  toc   
