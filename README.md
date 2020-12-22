@@ -5,7 +5,7 @@ Project 17
 在mat_gen.m這個程式中使用者只要給定一個自然數，則此程式能跑出一個長的很特別的n* n矩陣  
   
 Example:  
-%% intput:mat_gen(10)
+%% intput:mat_gen(10)  
 %% output:一個10*10的矩陣  
   
 其樣式為中心點為1(我們定義中心點為第floor(n/2)+1行，第floor(n/2)+1列的元素)依照逆時針方向填數字，一直填到第n行第1列元素為n^2  
